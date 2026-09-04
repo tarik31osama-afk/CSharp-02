@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Timers;
 
 namespace session02
 {
@@ -29,7 +30,13 @@ namespace session02
             Console.WriteLine(obj.GetType());
             #endregion
         }
+        #region 3rd
+       // Compile-time error — because you can't put string in an int var
+       // the correction is:
+       //int pages = 464;
+
+        #endregion
 
     }
-    
+
 }
