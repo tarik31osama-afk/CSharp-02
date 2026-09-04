@@ -20,8 +20,16 @@ namespace session02
 
             object obj = book;
             Console.WriteLine(obj);
-      
+            #endregion
+
+            #region 2nd q
+            Console.WriteLine(book.ToString());
+            Console.WriteLine(book.Equals(book));
+            Console.WriteLine(obj.GetHashCode());
+            Console.WriteLine(obj.GetType());
+            #endregion
         }
-        #endregion
+
     }
+    
 }
