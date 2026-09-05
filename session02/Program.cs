@@ -45,7 +45,8 @@ namespace session02
                 int res = y / x;
 
             }
-            catch (Exception ex) { 
+            catch (Exception ex)
+            {
 
                 Console.WriteLine("can't devide by zero");
             }
@@ -77,12 +78,12 @@ namespace session02
 
             #region 8th q
             string yearText = "2023";
-            int year=int.Parse(yearText);
+            int year = int.Parse(yearText);
             Console.WriteLine(year);
 
             string badText = "abc";
-            bool success=int.TryParse(badText, out int number);
-            if(success==false)
+            bool success = int.TryParse(badText, out int number);
+            if (success == false)
             {
                 Console.WriteLine("Invalid number");
             }
@@ -91,12 +92,20 @@ namespace session02
 
             #region 9th q
             int page = 300;
-            string pagestr= page.ToString();
+            string pagestr = page.ToString();
             Console.WriteLine(pagestr);
             Console.WriteLine(pagestr.GetType());
-           
+
             #endregion
 
+            #region 10th
+            int copies = 100;
+            object ob = copies;
+
+            int newInt = (int)ob;
+            Console.WriteLine(ob);
+            Console.WriteLine(newInt);
+            #endregion
         }
 
 
