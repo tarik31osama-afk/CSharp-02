@@ -62,6 +62,12 @@ namespace session02
             #endregion
 
 
+            #region 6th q
+            double price = 49.99;
+            int price2 = (int)price;
+            Console.WriteLine(price2);
+            #endregion
+
         }
 
     }
