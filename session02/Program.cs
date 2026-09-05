@@ -68,6 +68,14 @@ namespace session02
             Console.WriteLine(price2);
             #endregion
 
+
+            #region 7th q
+            string pagesText = "464";
+            int pagesText2 = Convert.ToInt32(pagesText);
+            Console.WriteLine(pagesText2);
+            #endregion
+
+
         }
 
     }
