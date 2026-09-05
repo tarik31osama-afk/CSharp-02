@@ -89,8 +89,12 @@ namespace session02
 
             #endregion
 
-            #region 9th
-            
+            #region 9th q
+            int page = 300;
+            string pagestr= page.ToString();
+            Console.WriteLine(pagestr);
+            Console.WriteLine(pagestr.GetType());
+           
             #endregion
 
         }
