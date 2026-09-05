@@ -75,8 +75,26 @@ namespace session02
             Console.WriteLine(pagesText2);
             #endregion
 
+            #region 8th q
+            string yearText = "2023";
+            int year=int.Parse(yearText);
+            Console.WriteLine(year);
+
+            string badText = "abc";
+            bool success=int.TryParse(badText, out int number);
+            if(success==false)
+            {
+                Console.WriteLine("Invalid number");
+            }
+
+            #endregion
+
+            #region 9th
+            
+            #endregion
 
         }
+
 
     }
 
