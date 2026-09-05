@@ -8,14 +8,14 @@ namespace session02
         #region 1st q
         class Book
         {
-          public  string title;
+            public string title;
             public int pages;
-         
+
 
         }
         static void Main(string[] args)
         {
-            Book book=new Book();
+            Book book = new Book();
             book.title = "c# basics";
             book.pages = 500;
 
@@ -29,14 +29,34 @@ namespace session02
             Console.WriteLine(obj.GetHashCode());
             Console.WriteLine(obj.GetType());
             #endregion
-        }
-        #region 3rd
-       // Compile-time error — because you can't put string in an int var
-       // the correction is:
-       //int pages = 464;
 
-        #endregion
+            #region 3rd
+            // Compile-time error — because you can't put string in an int var
+            // the correction is:
+            //int pages = 464;
+
+            #endregion
+
+            #region 4th q
+            try
+            {
+                int x = 0;
+                int y = 10;
+                int res = y / x;
+
+            }
+            catch (Exception ex) { 
+
+                Console.WriteLine("can't devide by zero");
+            }
+            finally
+            {
+                Console.WriteLine("Done");
+            }
+            #endregion
+        }
 
     }
+
 
 }
